@@ -14,7 +14,7 @@ RUN --mount=type=cache,target=/root/.m2 \
     test -n "$jar_file" && \
     cp "$jar_file" target/app.jar
 
-FROM eclipse-temurin:17-jre-alpine AS runtime
+FROM eclipse-temurin:25-jre-alpine AS runtime
 
 RUN apk upgrade --no-cache && \
     addgroup -S taskflow && \
