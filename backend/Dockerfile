@@ -16,7 +16,8 @@ RUN --mount=type=cache,target=/root/.m2 \
 
 FROM eclipse-temurin:17-jre-alpine AS runtime
 
-RUN addgroup -S taskflow && \
+RUN apk upgrade --no-cache && \
+    addgroup -S taskflow && \
     adduser -S -G taskflow taskflow
 
 WORKDIR /app
