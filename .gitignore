@@ -1,0 +1,39 @@
+# Local environment files
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Java / Maven
+**/target/
+*.class
+
+# JavaScript / Vite
+**/node_modules/
+**/dist/
+**/coverage/
+
+# Logs and runtime files
+*.log
+logs/
+*.pid
+
+# IDE and operating-system files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local container overrides
+docker-compose.override.yml
+
+# Keys, certificates, and service-account files
+*.pem
+*.key
+*.p12
+*.pfx
+*service-account*.json
+*serviceAccount*.json
