@@ -8,6 +8,15 @@ updates:
       day: monday
       timezone: Asia/Bahrain
     open-pull-requests-limit: 5
+    groups:
+      backend-non-major:
+        update-types:
+          - minor
+          - patch
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - version-update:semver-major
 
   - package-ecosystem: npm
     directory: /frontend
@@ -16,6 +25,15 @@ updates:
       day: monday
       timezone: Asia/Bahrain
     open-pull-requests-limit: 5
+    groups:
+      frontend-non-major:
+        update-types:
+          - minor
+          - patch
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - version-update:semver-major
 
   - package-ecosystem: docker
     directory: /backend
@@ -24,6 +42,15 @@ updates:
       day: monday
       timezone: Asia/Bahrain
     open-pull-requests-limit: 3
+    groups:
+      backend-images-non-major:
+        update-types:
+          - minor
+          - patch
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - version-update:semver-major
 
   - package-ecosystem: docker
     directory: /frontend
@@ -32,6 +59,15 @@ updates:
       day: monday
       timezone: Asia/Bahrain
     open-pull-requests-limit: 3
+    groups:
+      frontend-images-non-major:
+        update-types:
+          - minor
+          - patch
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - version-update:semver-major
 
   - package-ecosystem: docker-compose
     directory: /
@@ -40,6 +76,15 @@ updates:
       day: monday
       timezone: Asia/Bahrain
     open-pull-requests-limit: 3
+    groups:
+      compose-non-major:
+        update-types:
+          - minor
+          - patch
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - version-update:semver-major
 
   - package-ecosystem: github-actions
     directory: /
@@ -48,3 +93,12 @@ updates:
       day: monday
       timezone: Asia/Bahrain
     open-pull-requests-limit: 3
+    groups:
+      actions-non-major:
+        update-types:
+          - minor
+          - patch
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - version-update:semver-major
