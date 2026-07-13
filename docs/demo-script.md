@@ -25,15 +25,20 @@ If startup fails, use `docker compose logs --no-color` and resolve the issue bef
 
 Open <http://localhost:3000>.
 
-Demonstrate only flows that are implemented and verified in the finished application. A useful sequence is:
+Use this exact verified sequence:
 
-1. Open the task list or dashboard.
-2. Create one clearly named demo task.
-3. Edit its status or another supported field.
-4. Refresh the page and show that PostgreSQL retained the change.
-5. Delete the demo task if deletion is part of the implemented scope.
-
-Before recording, replace this generic sequence with the exact final labels used by the UI.
+1. On the task list, select **Create task**.
+2. Create a task named **Prepare TaskFlow demo** with:
+   - description: **Record the portfolio walkthrough**
+   - priority: **High**
+   - assignee: **Momo**
+   - due date: **29 July 2026**
+3. Submit with **Create task** and show the new task's detail page.
+4. Select **Edit task**, change **Status** to **In progress**, and submit with **Save changes**.
+5. Refresh the detail page and show that PostgreSQL retained the updated status.
+6. Return to the task list. Demonstrate **Search tasks**, then the **Status** and **Priority** filters.
+7. Clear the filters, reopen the demo task, select **Delete**, and confirm **Delete this task permanently?**
+8. Show that the task is removed from the list.
 
 ## 3. Persistence and health
 

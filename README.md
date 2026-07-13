@@ -1,6 +1,11 @@
 # TaskFlow Capstone
 
+[![CI](https://github.com/alaradim95-cyber/taskflow-capstone/actions/workflows/ci.yml/badge.svg)](https://github.com/alaradim95-cyber/taskflow-capstone/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/alaradim95-cyber/taskflow-capstone/actions/workflows/codeql.yml/badge.svg)](https://github.com/alaradim95-cyber/taskflow-capstone/actions/workflows/codeql.yml)
+
 TaskFlow is a full-stack task-management capstone built to demonstrate a clean React, Spring Boot, PostgreSQL, Docker, CI, security, and monitoring workflow. It provides a responsive task interface backed by a validated REST API and persistent PostgreSQL storage.
+
+**Portfolio release:** [v1.0.0](https://github.com/alaradim95-cyber/taskflow-capstone/releases/tag/v1.0.0) · verified locally and through GitHub Actions
 
 ## Architecture
 
@@ -35,7 +40,13 @@ The browser uses the frontend's same-origin `/api` route. Nginx forwards that ro
 - PostgreSQL persistence in the application stack and isolated H2 integration tests
 - Health and Prometheus metrics endpoints for observability
 
-## Screenshot
+## Screenshots
+
+### Desktop task detail
+
+![TaskFlow desktop task detail](docs/taskflow-desktop.png)
+
+### Mobile task detail
 
 ![TaskFlow mobile task detail](docs/taskflow-mobile.png)
 
