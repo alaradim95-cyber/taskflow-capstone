@@ -80,7 +80,7 @@ services:
       - edge
 
   prometheus:
-    image: prom/prometheus:v3.12.0
+    image: prom/prometheus:v3.13.1
     profiles:
       - monitoring
     command:
